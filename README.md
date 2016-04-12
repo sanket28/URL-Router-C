@@ -1,6 +1,6 @@
 # URL Router for C (Based on Uthash hashmap)
 
-This is a simple implementation of a URL Router in C. It uses the Uthash hasmap implementation to store routes and the functions associated with each route.   
+This is a simple implementation of a URL Router in C. It uses the Uthash hasmap implementation (https://github.com/troydhanson/uthash) to store routes and the functions associated with each route.   
 
 You just need to clone this repository and include the "router.h" header in your application and you are all set!  
 
