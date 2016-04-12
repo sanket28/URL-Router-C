@@ -22,7 +22,7 @@ struct Response {
  */
 struct RestAPI {
 	char *restUrl;
-	struct Response (*func)(const char *method, const char *data);
+	struct Response (*func)(char *method, char *data);
 	UT_hash_handle hh;
 };
 
@@ -32,7 +32,7 @@ struct RestAPI {
  * by passing the method and MHD_connection struct parameters to it. It returns the result of the operation back to the 
  * handler function
  */
-struct Response findRoute(const char *url, const char *method, const char *data);
+struct Response findRoute(char *url, char *method, char *data);
 
 /*
  * This adds routes to the RestAPI hashmap
