@@ -27,3 +27,6 @@ void httpClientHandler(char *url, char *method, char *data) {
 }
 ```  
 The __findRoute()__ function will check if the route exists in the hashmap. If yes, then it will execute the function associated with it and if not it will return an error message in the Response struct  
+
+## License  
+This software is released under the MIT License
