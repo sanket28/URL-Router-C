@@ -13,6 +13,15 @@ struct RestAPI {
 	UT_hash_handle hh;
 };
 
+/*
+ * A variable of this struct is returned when the respective router function gets executed. It contains the response
+ * message and the http status code
+ */
+struct Response {
+	char *responseMessage;
+	int httpStatusCode;
+};
+
 // Global structure of the hashmap. Can we make this not global??
 struct RestAPI *router = NULL;
 
